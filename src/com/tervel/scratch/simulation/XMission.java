@@ -47,7 +47,7 @@ public class XMission {
         for (int i = 0; i < ret.length; i++) {
             Individual individual = new Individual();
             if (rand.nextInt(100) < initialInfectionRate)
-                individual.infected = illnessDuration;
+                individual.infect(illnessDuration);
             ret[i] = individual;
         }
         return ret;
